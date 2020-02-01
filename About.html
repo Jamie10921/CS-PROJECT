@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> About </title>
+	<link rel="shortcut icon" href="../images/icon.png" />
+	<meta name="description" content="Project" />
+	<meta name="keywords" content="Project" />
+	<meta name="author" content="Duran, Esguerra, Garcia" />
+	<meta name="revised" content="Duran, Esguerra, Garcia 1/3/2020" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="../css/Base CSS.css">
+	<link rel="stylesheet" type="text/css" href="../css/About.css">
+	<link rel="shortcut icon" href="../images/icon.png" />
+		<script src = "../js/validateForm.js"></script>
+		<style>
+
+			html {
+				box-sizing: border-box;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<button onclick = "topFunction()" id = "button" title = "Go to top">  Back to Top </button>
+		<script src = "../js/Back to Top.js"></script>
+
+		<header>
+			<h1>About</h1>
+			<h4>The Authors of the Page</h4>
+		</header>
+
+		<nav>
+			<a href = "Home.html"> Home </a>
+			<a href = "Netiquette.html"> Netiquette </a>
+			<a href = "Cyberbullying.html"> Cyber-bullying </a>
+			<a href = "Internet Safety.html"> Internet Safety </a>
+			<a href = "News.html"> News </a>
+			<a class="active" href = "About.html"> About </a>
+		</nav>
+
+		<article>
+			<div class="row">
+				<div class="column">
+					<div class="card">
+						<div class="container">
+							<img src="../images/Elijah.jpg" alt="Elijah" style="width:100%">
+							<h3> Elijah Duran </h3>
+							<p> Elijah is currently in 9th grade and is studying at Philippine Science High School. He enjoys playing video games, like Mobile Legends, drawing anime characters, and most of all, listening to music.
+							<br>
+							<br>
+							Contact Elijah at his email <a href="mailto:b2023eiduran@pshs.edu.ph" target="_top"> here </a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="container">
+							<img src="../images/Jamie.jpg" alt="Jamie" style="width:100%">
+							<h3> Jamie Esguerra </h3>
+							<p> Jamie is a 14 year old student at Philippine Science High School. She loves musicals and enjoys wall climbing in her spare time. She is currently spending her time reading and doing nothing.
+							<br>
+							<br>
+							Contact Jamie at her email <a href="mailto:b2023jmesguerra@pshs.edu.ph" target="_top"> here </a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="container">
+							<img src="../images/Sam.heic" alt="Sam" style="width:100%">
+							<h3> Sam Garcia </h3>
+							<p> Sam is a Grade 9 student, studying at Philippine Science High School. In her spare time, she likes to draw characters and make stories about these characters.
+							<br>
+							<br>
+							Contact Sam at her email <a href="mailto:b2023ssgarcia@pshs.edu.ph" target="_top"> here </a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<div class = "footer">
+		<h4> Would you like to sign up to help us create more awareness pages? </h4>
+		<form name="form"
+		onsubmit="return validateForm()"
+		onreset="return confirm('Really start over?')"
+		>
+			<fieldset>
+				<legend> Contact Details </legend>
+				<label> Please Enter Full Name
+					<input type="text" name="name" value="Your Name"/>
+				</label>
+				<label> Please Enter Email Address
+					<input type="text" name="email" value="Your Email@mail.com"/>
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend> What are your specialties? </legend>
+					<input type="checkbox" id="1"/> Website Development <br>
+					<input type="checkbox" id="2"/> Website Design <br>
+					<input type="checkbox" id="3"/> CSS Creator <br>
+					<input type="checkbox" id="4"/> Forms Creator <br>
+					<input type="checkbox" id="others" onclick="check()"/> Others (Please Specify): <br>
+					<input type="text" id="text" name="custom" style="display:none"/>
+					<script src = "../js/check.js"></script>
+			</fieldset>
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Restart" />
+		</form>
+		</div>
+
+	</body>
+</html>
